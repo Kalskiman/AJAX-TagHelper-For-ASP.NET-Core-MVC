@@ -24,7 +24,7 @@ after this change, you can use Anchor Tagler Like this :
                         <span class="icon text-white-50"><i class="fas fa-plus"></i></span>
                         <span class="text"> Add Menu </span>
   </a>
-  
+```  
 also I add two additional options for adding these features with initial default values, 
 that means
 We use this taghelper repeatedly in real projects, and at this point we usually use the same values for these options
