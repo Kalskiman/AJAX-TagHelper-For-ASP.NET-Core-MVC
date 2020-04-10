@@ -11,6 +11,7 @@ asp-ajax-onBegin
 asp-ajax-onComplete
 
 after this change, you can use Anchor Tagler Like this :
+```c#
  <a asp-action="create" asp-controller="sitemenu" asp-area="admin"
                         asp-ajax="true"
                         asp-ajax-method="get" 
@@ -29,7 +30,7 @@ that means
 We use this taghelper repeatedly in real projects, and at this point we usually use the same values for these options
 with these two additional options, those same values are easily added, 
 I rewrote the example above using this option:
-
+```c#
 <a asp-action="create" asp-controller="sitemenu" asp-area="admin"
                         asp-ajax-default-values="true"
                         asp-ajax-default-functions="true"
