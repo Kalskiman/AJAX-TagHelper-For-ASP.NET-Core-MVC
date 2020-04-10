@@ -3,7 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29926.136
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NF.Samples.MyTagHelpers", "NF.Samples.MyTagHelpers\NF.Samples.MyTagHelpers.csproj", "{917AD7BE-BDDA-4D9C-9BC3-CF64C33AACDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NF.Samples.UsingAjaxTagHelpers", "NF.Samples.UsingAjaxTagHelpers\NF.Samples.UsingAjaxTagHelpers.csproj", "{242ABDE6-429D-4F62-BDBA-D6D8F95AFC15}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{917AD7BE-BDDA-4D9C-9BC3-CF64C33AACDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{917AD7BE-BDDA-4D9C-9BC3-CF64C33AACDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{917AD7BE-BDDA-4D9C-9BC3-CF64C33AACDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{917AD7BE-BDDA-4D9C-9BC3-CF64C33AACDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{242ABDE6-429D-4F62-BDBA-D6D8F95AFC15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{242ABDE6-429D-4F62-BDBA-D6D8F95AFC15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{242ABDE6-429D-4F62-BDBA-D6D8F95AFC15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{242ABDE6-429D-4F62-BDBA-D6D8F95AFC15}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
