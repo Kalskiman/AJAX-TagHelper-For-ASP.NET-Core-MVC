@@ -1,4 +1,4 @@
-# AJAX-TagHelper-For-ASP.NET-Core-MVC
+# AJAX TagHelper For ASP.NET Core MVC
 Add ajax option to Anchor TagHelper in asp.net core 
 
 in this sample I add these features to Anchor TagHelper for ASP.NET Core MVC
