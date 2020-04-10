@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -21,6 +22,27 @@ namespace NF.Samples.UsingAjaxTagHelpers.Controllers
         public IActionResult Index()
         {
             return View();
+        }
+
+        public IActionResult modaltest()
+        {
+            return PartialView();
+        }
+        public IActionResult test()
+        {
+            Thread.Sleep(1000);
+            return PartialView();
+        }
+
+        public IActionResult anothertest()
+        {
+            return PartialView();
+        }
+
+        [HttpPost]
+        public IActionResult SaveData(SampleDataModel model)
+        {
+            return PartialView(model);
         }
 
         public IActionResult Privacy()

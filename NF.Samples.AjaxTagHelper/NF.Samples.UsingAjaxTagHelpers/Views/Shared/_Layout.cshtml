@@ -6,6 +6,8 @@
     <title>@ViewData["Title"] - NF.Samples.UsingAjaxTagHelpers</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/jquery.unobtrusive-ajax.js"></script>
 </head>
 <body>
     <header>
@@ -34,15 +36,44 @@
             @RenderBody()
         </main>
     </div>
-
+    <div class="modal fade" id="pageModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" id="modalContent">
+            </div>
+        </div>
+    </div>
     <footer class="border-top footer text-muted">
         <div class="container">
             &copy; 2020 - NF.Samples.UsingAjaxTagHelpers - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            
         </div>
     </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+  
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @RenderSection("Scripts", required: false)
+
+    <script type="text/javascript">
+        function showModal() {
+            $('#exampleModalScrollable').modal();
+        }
+
+        function hideModel() {
+            $('#pageModal').modal('hide');
+        }
+
+        function oncompleteForm() {
+            $(".btnSubmit").show();
+            $(".ajax-submit-loader").hide();
+        }
+
+        function onbeginForm() {
+            $(".btnSubmit").hide();
+            $(".ajax-submit-loader").show();
+        }
+    </script>
+
 </body>
 </html>

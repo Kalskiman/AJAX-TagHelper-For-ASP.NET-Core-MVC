@@ -4,5 +4,57 @@
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <p>
+        Ajax Action Link sample for asp.net mvc core
+        <br />
+        Learn about <a href="https://github.com/NevitFeridi/AJAX-TagHelper-For-ASP.NET-Core-MVC">building Web apps with ASP.NET Core</a>.
+    </p>
 </div>
+
+
+<a asp-action="modaltest" asp-controller="home" class="btn btn-success"
+   asp-ajax="true"
+   asp-ajax-default-functions="false"
+   asp-ajax-default-values="false"
+   asp-ajax-loading="#ajaxloading"
+   asp-ajax-method="get"
+   asp-ajax-mode="replace"
+   asp-ajax-onBegin="showModal()"
+   asp-ajax-update="#modalContent2"
+   title="show modal with ajax sample"> show modal</a>
+
+<a asp-action="test" asp-controller="home" class="btn btn-primary"
+   asp-ajax="true"
+   asp-ajax-default-functions="false"
+   asp-ajax-default-values="false"
+   asp-ajax-loading="#ajaxloading"
+   asp-ajax-method="get"
+   asp-ajax-mode="replace"
+   asp-ajax-update="#updatePlace"
+   title="show data with ajax sample"> sampel ajax link </a>
+
+
+
+<a asp-action="anothertest" asp-controller="home" class="btn btn-warning"
+   asp-ajax="true"
+   asp-ajax-default-functions="false"
+   asp-ajax-default-values="false"
+   asp-ajax-loading="#ajaxloading"
+   asp-ajax-method="get"
+   asp-ajax-mode="replace"
+   asp-ajax-update="#updatePlace"
+   title="show data with ajax sample"> sampel ajax link another test </a>
+<div class="row">
+    <span id="ajaxloading" style="display:none;"> <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span></span>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable" role="document">
+        <div class="modal-content" id="modalContent2">
+
+        </div>
+    </div>
+</div>
+<br />
+<div id="updatePlace" class="card card-body">this is update place</div>
